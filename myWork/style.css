@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DAC8BE;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: #202427;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    display: flex;
+    overflow-y: scroll;
+}
+
+.tabnow {
+    color: #ECC1A1;
+}
+
+.tab {
+    color: #F5F1EE;
+}
+
+.tab:hover {
+    color: #ECC1A1;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background: url(../items/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.imageHD {
+    width: 110px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav ul {
+    background: #58626C;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    color: #F5F1EE;
+    cursor: pointer;
+}
+
+nav.sticky {
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: #58626C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+nav.sticky ul {
+    width: auto;
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    height: 420px;
+    font-family: 'Open Sans';
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    background: #58626C;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.card .profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 12px solid rgba(255, 255, 255, .05);
+}
+
+.card .profile h2 {
+    color: #F5F1EE;
+    font-size: 26px;
+    margin-top: 8px;
+}
+
+.card .profile p {
+    color: #F5F1EE;
+    font-size: 18px;
+}
+
+.card .profile {
+    transform: translateY(20px);
+    transition: .4s ease-out;
+}
+
+.card:hover .profile {
+    transform: translateY(0);
+}
+
+.card .social-icons {
+    margin-top: 30px;
+}
+
+.card .social-icons i {
+    cursor: pointer;
+    color: #F5F1EE;
+    margin: 0 8px;
+    font-size: 22px;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: .2s;
+}
+
+.card:hover .social-icons i {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .social-icons i:hover {
+    color: #ECC1A1;
+}
+
+.card .social-icons i:nth-child(1) {
+    transition-delay: .1s;
+}
+
+.card .social-icons i:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.card .social-icons i:nth-child(3) {
+    transition-delay: .3s;
+}
+
+.card .social-icons i:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.divcard {
+    display: flex;
+}
+
+.description {
+    width: 60%;
+    margin: 20px;
+}
+
+.text {
+    margin: 20px;
+}
